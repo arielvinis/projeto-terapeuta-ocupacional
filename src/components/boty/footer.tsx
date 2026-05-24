@@ -1,27 +1,34 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Instagram, Mail, Phone, MapPin } from "lucide-react"
+import Link from "next/link";
+import {
+  IconBrandInstagram,
+  IconBrandWhatsapp,
+  IconMail,
+  IconMapPin,
+} from "@tabler/icons-react";
+
+const iconProps = { size: 16, stroke: 1.5, className: "size-4" };
 
 const footerLinks = {
   servicos: [
     { name: "Avaliacao Inicial", href: "/#servicos" },
     { name: "Terapia Individual", href: "/#servicos" },
     { name: "Orientacao Familiar", href: "/#servicos" },
-    { name: "Grupos Terapeuticos", href: "/#servicos" }
+    { name: "Grupos Terapeuticos", href: "/#servicos" },
   ],
   sobre: [
     { name: "Sobre Mim", href: "/#sobre" },
     { name: "Abordagem", href: "/#sobre" },
     { name: "Depoimentos", href: "/#depoimentos" },
-    { name: "Materiais", href: "/shop" }
+    { name: "Materiais", href: "/shop" },
   ],
   contato: [
     { name: "Agendar Consulta", href: "/#agendar" },
     { name: "WhatsApp", href: "https://wa.me/5500000000000" },
-    { name: "Localizacao", href: "/#contato" }
-  ]
-}
+    { name: "Localizacao", href: "/#contato" },
+  ],
+};
 
 export function Footer() {
   return (
@@ -32,7 +39,7 @@ export function Footer() {
           Vitoria
         </span>
       </div>
-      
+
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-16">
           {/* Brand */}
@@ -40,9 +47,12 @@ export function Footer() {
             <h2 className="font-serif text-2xl text-foreground mb-2">
               <span className="text-primary">Vitoria</span> Vizzotto
             </h2>
-            <p className="text-xs text-primary mb-4">Terapeuta Ocupacional - CREFITO</p>
+            <p className="text-xs text-primary mb-4">
+              Terapeuta Ocupacional - CREFITO
+            </p>
             <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-              Cuidando do desenvolvimento infantil com amor, dedicacao e profissionalismo.
+              Cuidando do desenvolvimento infantil com amor, dedicacao e
+              profissionalismo.
             </p>
             <div className="flex gap-4">
               <a
@@ -52,14 +62,14 @@ export function Footer() {
                 className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-foreground/60 hover:text-primary hover:bg-primary/10 vivi-transition vivi-shadow"
                 aria-label="Instagram"
               >
-                <Instagram className="w-4 h-4" />
+                <IconBrandInstagram {...iconProps} />
               </a>
               <a
                 href="mailto:contato@vitoriavizzotto.com"
                 className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-foreground/60 hover:text-primary hover:bg-primary/10 vivi-transition vivi-shadow"
                 aria-label="Email"
               >
-                <Mail className="w-4 h-4" />
+                <IconMail {...iconProps} />
               </a>
               <a
                 href="https://wa.me/5500000000000"
@@ -68,7 +78,7 @@ export function Footer() {
                 className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-foreground/60 hover:text-primary hover:bg-primary/10 vivi-transition vivi-shadow"
                 aria-label="WhatsApp"
               >
-                <Phone className="w-4 h-4" />
+                <IconBrandWhatsapp {...iconProps} />
               </a>
             </div>
           </div>
@@ -123,7 +133,7 @@ export function Footer() {
               ))}
             </ul>
             <div className="mt-6 flex items-start gap-2 text-sm text-muted-foreground">
-              <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
+              <IconMapPin {...iconProps} className="mt-0.5 shrink-0 size-4" />
               <span>Atendimento presencial e online</span>
             </div>
           </div>
@@ -133,13 +143,20 @@ export function Footer() {
         <div className="pt-10 border-t border-border/50">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Vitoria Vizzotto Moreira. Todos os direitos reservados.
+              © {new Date().getFullYear()} Vitoria Vizzotto Moreira. Todos os
+              direitos reservados.
             </p>
             <div className="flex gap-6">
-              <Link href="/" className="text-sm text-muted-foreground hover:text-primary vivi-transition">
+              <Link
+                href="/"
+                className="text-sm text-muted-foreground hover:text-primary vivi-transition"
+              >
                 Politica de Privacidade
               </Link>
-              <Link href="/" className="text-sm text-muted-foreground hover:text-primary vivi-transition">
+              <Link
+                href="/"
+                className="text-sm text-muted-foreground hover:text-primary vivi-transition"
+              >
                 Termos de Uso
               </Link>
             </div>
@@ -147,5 +164,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
