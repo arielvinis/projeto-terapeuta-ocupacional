@@ -48,8 +48,8 @@ export function CTABanner() {
               Vamos juntos cuidar do desenvolvimento do seu filho
             </h3>
             <p className="text-lg text-white/80 mb-8 max-w-xl">
-              A primeira avaliacao e essencial para entender as necessidades da
-              crianca e tracar um plano de intervencao personalizado.
+              A primeira avaliação é essencial para entender as necessidades da
+              criança e traçar um plano de intervenção personalizado.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start mb-8">
@@ -80,7 +80,7 @@ export function CTABanner() {
           <div className="relative w-full lg:w-80 aspect-square rounded-2xl overflow-hidden shrink-0">
             <Image
               src="/images/therapy-play.jpg"
-              alt="Sessao de terapia ocupacional"
+              alt="Sessão de terapia ocupacional"
               fill
               className="object-cover"
             />

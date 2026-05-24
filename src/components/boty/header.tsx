@@ -46,10 +46,16 @@ export function Header() {
               Sobre
             </Link>
             <Link
+              href="/#materiais"
+              className="text-sm tracking-wide text-foreground/70 hover:text-primary vivi-transition"
+            >
+              Materiais
+            </Link>
+            <Link
               href="/#servicos"
               className="text-sm tracking-wide text-foreground/70 hover:text-primary vivi-transition"
             >
-              Servicos
+              Serviços
             </Link>
           </div>
 
@@ -109,18 +115,18 @@ export function Header() {
               Sobre
             </Link>
             <Link
-              href="/#servicos"
-              className="text-sm tracking-wide text-foreground/70 hover:text-primary vivi-transition"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Servicos
-            </Link>
-            <Link
-              href="/shop"
+              href="/#materiais"
               className="text-sm tracking-wide text-foreground/70 hover:text-primary vivi-transition"
               onClick={() => setIsMenuOpen(false)}
             >
               Materiais
+            </Link>
+            <Link
+              href="/#servicos"
+              className="text-sm tracking-wide text-foreground/70 hover:text-primary vivi-transition"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Serviços
             </Link>
             <Link
               href="/#agendar"

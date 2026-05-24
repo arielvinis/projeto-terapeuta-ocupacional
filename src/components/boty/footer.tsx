@@ -25,7 +25,7 @@ const footerLinks = {
   ],
   contato: [
     { name: "Agendar Consulta", href: "/#agendar" },
-    { name: "WhatsApp", href: "https://wa.me/5500000000000" },
+    { name: "WhatsApp", href: "https://wa.me/555596867402" },
     { name: "Localizacao", href: "/#contato" },
   ],
 };
@@ -51,12 +51,12 @@ export function Footer() {
               Terapeuta Ocupacional - CREFITO
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-              Cuidando do desenvolvimento infantil com amor, dedicacao e
+              Cuidando do desenvolvimento infantil com amor, dedicação e
               profissionalismo.
             </p>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/vitoriamoreira.to"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-foreground/60 hover:text-primary hover:bg-primary/10 vivi-transition vivi-shadow"
@@ -65,14 +65,14 @@ export function Footer() {
                 <IconBrandInstagram {...iconProps} />
               </a>
               <a
-                href="mailto:contato@vitoriavizzotto.com"
+                href="mailto:tovitoriamoreira@gmail.com"
                 className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-foreground/60 hover:text-primary hover:bg-primary/10 vivi-transition vivi-shadow"
                 aria-label="Email"
               >
                 <IconMail {...iconProps} />
               </a>
               <a
-                href="https://wa.me/5500000000000"
+                href="https://wa.me/555596867402"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-foreground/60 hover:text-primary hover:bg-primary/10 vivi-transition vivi-shadow"
@@ -134,7 +134,7 @@ export function Footer() {
             </ul>
             <div className="mt-6 flex items-start gap-2 text-sm text-muted-foreground">
               <IconMapPin {...iconProps} className="mt-0.5 shrink-0 size-4" />
-              <span>Atendimento presencial e online</span>
+              <span>Atendimento presencial e on-line</span>
             </div>
           </div>
         </div>
@@ -151,7 +151,7 @@ export function Footer() {
                 href="/"
                 className="text-sm text-muted-foreground hover:text-primary vivi-transition"
               >
-                Politica de Privacidade
+                Política de Privacidade
               </Link>
               <Link
                 href="/"

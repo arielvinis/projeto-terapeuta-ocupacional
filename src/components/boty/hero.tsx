@@ -6,7 +6,7 @@ import { ArrowRight, Heart, Star, Sparkles } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-background pt-20">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-background pt-25">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -51,8 +51,8 @@ export function Hero() {
               className="text-lg leading-relaxed mb-10 max-w-md mx-auto lg:mx-0 text-muted-foreground animate-blur-in opacity-0"
               style={{ animationDelay: "1s", animationFillMode: "forwards" }}
             >
-              Ajudo criancas a alcancarem seu maximo potencial atraves de
-              intervencoes ludicas e personalizadas para autismo, TDAH e atrasos
+              Ajudo crianças a alcançarem seu máximo potencial através de
+              intervenções lúdicas e personalizadas para autismo, TDAH e atrasos
               no desenvolvimento.
             </p>
             <div
@@ -86,13 +86,13 @@ export function Hero() {
                   </div>
                 </div>
                 <span className="text-sm text-muted-foreground">
-                  +100 familias atendidas
+                  +100 famílias atendidas
                 </span>
               </div>
               <div className="flex items-center gap-2">
                 <Sparkles className="w-4 h-4 text-primary" />
                 <span className="text-sm text-muted-foreground">
-                  3+ anos de experiencia
+                  3+ anos de experiência
                 </span>
               </div>
             </div>
