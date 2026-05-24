@@ -21,7 +21,6 @@ export const metadata: Metadata = {
   title: "Vitoria Vizzotto Moreira — Terapeuta Ocupacional Infantil",
   description:
     "Terapia Ocupacional especializada em desenvolvimento infantil, autismo, TDAH e atrasos no desenvolvimento. Atendimento acolhedor e personalizado.",
-  generator: "v0.app",
   keywords: [
     "terapia ocupacional",
     "terapeuta ocupacional",
