@@ -1,0 +1,190 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* Vitoria Vizzotto Moreira — Terapia Ocupacional Infantil */
+:root {
+  /* Brand Colors: Soft Pink, Warm Peach, Light Lavender, Sage Green, Cream */
+  --background: #FBF9F7; /* Cream */
+  --foreground: #2D3436; /* Charcoal */
+  --card: #FFF5F0; /* Soft Peach Tint */
+  --card-foreground: #2D3436;
+  --popover: #FBF9F7;
+  --popover-foreground: #2D3436;
+  --primary: #7BA38F; /* Sage Green */
+  --primary-foreground: #FFFFFF;
+  --secondary: #F5E6E0; /* Warm Peach */
+  --secondary-foreground: #2D3436;
+  --muted: #FFF5F0;
+  --muted-foreground: #6B7280;
+  --accent: #E8D5E0; /* Light Lavender */
+  --accent-foreground: #2D3436;
+  --destructive: #E57373;
+  --destructive-foreground: #FFFFFF;
+  --border: #F0E6E0;
+  --input: #FFF5F0;
+  --ring: #7BA38F;
+  --chart-1: #7BA38F;
+  --chart-2: #F5B7B1;
+  --chart-3: #E8D5E0;
+  --chart-4: #B8D4C8;
+  --chart-5: #D4A5A5;
+  --radius: 1rem;
+  --sidebar: #FFF5F0;
+  --sidebar-foreground: #2D3436;
+  --sidebar-primary: #7BA38F;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F5E6E0;
+  --sidebar-accent-foreground: #2D3436;
+  --sidebar-border: #F0E6E0;
+  --sidebar-ring: #7BA38F;
+}
+
+.dark {
+  --background: #1A1D1E;
+  --foreground: #FBF9F7;
+  --card: #252829;
+  --card-foreground: #FBF9F7;
+  --popover: #1A1D1E;
+  --popover-foreground: #FBF9F7;
+  --primary: #8FB89E;
+  --primary-foreground: #1A1D1E;
+  --secondary: #3D3A38;
+  --secondary-foreground: #FBF9F7;
+  --muted: #252829;
+  --muted-foreground: #9CA3AF;
+  --accent: #3D3A38;
+  --accent-foreground: #FBF9F7;
+  --destructive: #E57373;
+  --destructive-foreground: #FFFFFF;
+  --border: #3D3A38;
+  --input: #252829;
+  --ring: #8FB89E;
+  --chart-1: #8FB89E;
+  --chart-2: #D4A5A5;
+  --chart-3: #9B8A9B;
+  --chart-4: #7BA38F;
+  --chart-5: #F5E6E0;
+  --sidebar: #252829;
+  --sidebar-foreground: #FBF9F7;
+  --sidebar-primary: #8FB89E;
+  --sidebar-primary-foreground: #1A1D1E;
+  --sidebar-accent: #3D3A38;
+  --sidebar-accent-foreground: #FBF9F7;
+  --sidebar-border: #3D3A38;
+  --sidebar-ring: #8FB89E;
+}
+
+@theme inline {
+  --font-sans: 'DM Sans', 'DM Sans Fallback', sans-serif;
+  --font-serif: 'Playfair Display', 'Playfair Display Fallback', serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 8px);
+  --radius-2xl: calc(var(--radius) + 16px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom soft shadow utility */
+.vivi-shadow {
+  box-shadow: rgba(123, 163, 143, 0.08) 0px 0px 0px 1px, rgba(123, 163, 143, 0.04) 0px 1px 1px -0.5px, rgba(123, 163, 143, 0.06) 0px 3px 3px -1.5px, rgba(123, 163, 143, 0.06) 0px 6px 6px -3px, rgba(123, 163, 143, 0.04) 0px 12px 12px -6px, rgba(123, 163, 143, 0.04) 0px 24px 24px -12px;
+}
+
+/* Smooth transitions */
+.vivi-transition {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Blur in animation */
+@keyframes blur-in {
+  0% {
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+.animate-blur-in {
+  animation: blur-in 0.8s ease-out;
+}
+
+/* Scale fade in animation */
+@keyframes scale-fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-scale-fade-in {
+  animation: scale-fade-in 0.6s ease-out;
+}
+
+/* Float animation for playful elements */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
